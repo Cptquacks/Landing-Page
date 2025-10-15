@@ -79,7 +79,7 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Observar elementos para animaciones
-    const animatedElements = document.querySelectorAll('.project-card, .blog-post, .skill-item, .contact-method, .gamedev-item');
+    const animatedElements = document.querySelectorAll('.project-card, .skill-item, .contact-method, .gamedev-item');
     animatedElements.forEach(el => observer.observe(el));
 
     // Animación especial para el título del hero
@@ -315,13 +315,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Configurar imágenes de blog
-    const blogImages = document.querySelectorAll('.post-image img');
-    blogImages.forEach((img, index) => {
-        if (!img.src || img.src.includes('blog')) {
-            img.src = generatePlaceholder(400, 200, `Blog Post ${index + 1}`);
-        }
-    });
 });
 
 // Función para modo oscuro (opcional)

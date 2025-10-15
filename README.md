@@ -11,7 +11,6 @@ Un sitio web de portfolio personal moderno y responsivo para desarrollador backe
   - Sobre mí con habilidades técnicas (C/C++, Java, Python, JavaScript, Node.js, Express)
   - Desarrollo de videojuegos (Unity, Godot, MonoGame, Phaser, Love2D)
   - Portfolio de proyectos
-  - Blog personal
   - Formulario de contacto
 - **Interactividad**: JavaScript vanilla para navegación suave y efectos
 - **GitHub Pages Ready**: Configurado para despliegue automático
