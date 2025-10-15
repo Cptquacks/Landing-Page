@@ -1,6 +1,73 @@
+/* Game Development Section */
+.gamedev {
+    background-color: var(--bg-primary);
+}
+
+.gamedev-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.gamedev-text p {
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--spacing-3xl);
+    line-height: 1.8;
+}
+
+.gamedev-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-2xl);
+}
+
+.gamedev-item {
+    background: white;
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
+    text-align: center;
+}
+
+.gamedev-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.gamedev-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.gamedev-icon i {
+    font-size: var(--font-size-3xl);
+    color: white;
+}
+
+.gamedev-item h3 {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+}
+
+.gamedev-item p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
 /* Projects Section */
 .projects {
-    background-color: var(--bg-primary);
+    background-color: var(--bg-secondary);
 }
 
 .projects-grid {
@@ -387,6 +454,15 @@
 
 /* Responsive para componentes */
 @media (max-width: 768px) {
+    .gamedev-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .gamedev-item {
+        padding: var(--spacing-lg);
+    }
+
     .projects-grid {
         grid-template-columns: 1fr;
     }

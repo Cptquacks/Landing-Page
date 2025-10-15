@@ -1,6 +1,6 @@
-# Portfolio Personal - Cptquacks
+# Portfolio Personal - William (Cptquacks)
 
-Un sitio web de portfolio personal moderno y responsivo, diseñado para ser alojado en GitHub Pages.
+Un sitio web de portfolio personal moderno y responsivo para desarrollador backend y game developer, diseñado para ser alojado en GitHub Pages.
 
 ## 🚀 Características
 
@@ -8,7 +8,8 @@ Un sitio web de portfolio personal moderno y responsivo, diseñado para ser aloj
 - **Totalmente Responsivo**: Optimizado para dispositivos móviles, tablets y desktop
 - **Secciones Completas**:
   - Hero/Inicio con presentación personal
-  - Sobre mí con habilidades técnicas
+  - Sobre mí con habilidades técnicas (C/C++, Java, Python, JavaScript, Node.js, Express)
+  - Desarrollo de videojuegos (Unity, Godot, MonoGame, Phaser, Love2D)
   - Portfolio de proyectos
   - Blog personal
   - Formulario de contacto

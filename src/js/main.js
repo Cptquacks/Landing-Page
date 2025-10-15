@@ -79,7 +79,7 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Observar elementos para animaciones
-    const animatedElements = document.querySelectorAll('.project-card, .blog-post, .skill-item, .contact-method');
+    const animatedElements = document.querySelectorAll('.project-card, .blog-post, .skill-item, .contact-method, .gamedev-item');
     animatedElements.forEach(el => observer.observe(el));
 
     // Animación especial para el título del hero
