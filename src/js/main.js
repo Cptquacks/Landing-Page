@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicializar todas las funcionalidades
     initNavigation();
     initScrollAnimations();
-    initContactForm();
     initProfileImage();
     initSmoothScrolling();
 });
@@ -79,133 +78,15 @@ function initScrollAnimations() {
     }, observerOptions);
 
     // Observar elementos para animaciones
-    const animatedElements = document.querySelectorAll('.project-card, .skill-item, .contact-method, .gamedev-item');
+    const animatedElements = document.querySelectorAll('.tech-badge, .contact-method, .gamedev-item');
     animatedElements.forEach(el => observer.observe(el));
 
-    // Animación especial para el título del hero
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        setTimeout(() => {
-            heroTitle.classList.add('animate-fadeInLeft');
-        }, 300);
-    }
-
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    if (heroSubtitle) {
-        setTimeout(() => {
-            heroSubtitle.classList.add('animate-fadeInLeft');
-        }, 600);
-    }
-
-    const heroButtons = document.querySelector('.hero-buttons');
-    if (heroButtons) {
-        setTimeout(() => {
-            heroButtons.classList.add('animate-fadeInLeft');
-        }, 900);
-    }
 }
 
-// Formulario de contacto
-function initContactForm() {
-    const contactForm = document.querySelector('.contact-form');
-    
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Obtener datos del formulario
-            const formData = new FormData(contactForm);
-            const name = formData.get('name');
-            const email = formData.get('email');
-            const message = formData.get('message');
-            
-            // Validación básica
-            if (!name || !email || !message) {
-                showNotification('Por favor, completa todos los campos', 'error');
-                return;
-            }
-            
-            if (!isValidEmail(email)) {
-                showNotification('Por favor, ingresa un email válido', 'error');
-                return;
-            }
-            
-            // Simular envío (aquí podrías integrar con un servicio real)
-            const submitBtn = contactForm.querySelector('.btn');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = 'Enviando...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                showNotification('¡Mensaje enviado con éxito! Te contactaré pronto.', 'success');
-                contactForm.reset();
-                submitBtn.textContent = originalText;
-                submitBtn.disabled = false;
-            }, 2000);
-        });
-    }
-}
-
-// Validar email
-function isValidEmail(email) {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-// Sistema de notificaciones
-function showNotification(message, type = 'info') {
-    // Crear elemento de notificación
-    const notification = document.createElement('div');
-    notification.className = `notification notification-${type}`;
-    notification.textContent = message;
-    
-    // Estilos de la notificación
-    notification.style.cssText = `
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        padding: 15px 20px;
-        border-radius: 8px;
-        color: white;
-        font-weight: 500;
-        z-index: 10000;
-        transform: translateX(400px);
-        transition: transform 0.3s ease-in-out;
-        max-width: 300px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    `;
-    
-    // Colores según el tipo
-    const colors = {
-        success: '#10b981',
-        error: '#ef4444',
-        info: '#3b82f6',
-        warning: '#f59e0b'
-    };
-    
-    notification.style.backgroundColor = colors[type] || colors.info;
-    
-    // Agregar al DOM
-    document.body.appendChild(notification);
-    
-    // Mostrar notificación
-    setTimeout(() => {
-        notification.style.transform = 'translateX(0)';
-    }, 100);
-    
-    // Ocultar después de 5 segundos
-    setTimeout(() => {
-        notification.style.transform = 'translateX(400px)';
-        setTimeout(() => {
-            document.body.removeChild(notification);
-        }, 300);
-    }, 5000);
-}
 
 // Imagen de perfil interactiva
 function initProfileImage() {
-    const profileImg = document.getElementById('profile-img');
+    const profileImg = document.getElementById('william-photo');
     
     if (profileImg) {
         // Imagen placeholder si no existe la imagen
@@ -252,16 +133,6 @@ function initSmoothScrolling() {
     });
 }
 
-// Efectos de paralaje sutil
-window.addEventListener('scroll', function() {
-    const scrolled = window.pageYOffset;
-    const parallaxElements = document.querySelectorAll('.hero-image');
-    
-    parallaxElements.forEach(element => {
-        const speed = 0.5;
-        element.style.transform = `translateY(${scrolled * speed}px)`;
-    });
-});
 
 // Función para manejar el redimensionamiento de ventana
 window.addEventListener('resize', function() {
@@ -277,53 +148,5 @@ window.addEventListener('resize', function() {
     }
 });
 
-// Función para lazy loading de imágenes
-function initLazyLoading() {
-    const images = document.querySelectorAll('img[data-src]');
-    
-    const imageObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const img = entry.target;
-                img.src = img.dataset.src;
-                img.classList.remove('lazy');
-                imageObserver.unobserve(img);
-            }
-        });
-    });
-    
-    images.forEach(img => imageObserver.observe(img));
-}
 
-// Función para generar imágenes placeholder
-function generatePlaceholder(width, height, text) {
-    return `data:image/svg+xml;base64,${btoa(`
-        <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-            <rect width="${width}" height="${height}" fill="#e5e7eb"/>
-            <text x="50%" y="50%" font-family="Arial, sans-serif" font-size="16" fill="#6b7280" text-anchor="middle" dominant-baseline="middle">${text}</text>
-        </svg>
-    `)}`;
-}
 
-// Configurar imágenes placeholder
-document.addEventListener('DOMContentLoaded', function() {
-    // Configurar imágenes de proyectos
-    const projectImages = document.querySelectorAll('.project-image img');
-    projectImages.forEach((img, index) => {
-        if (!img.src || img.src.includes('project')) {
-            img.src = generatePlaceholder(400, 200, `Proyecto ${index + 1}`);
-        }
-    });
-    
-});
-
-// Función para modo oscuro (opcional)
-function toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-}
-
-// Cargar preferencia de modo oscuro
-if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-}

@@ -1,131 +1,132 @@
-# Portfolio Personal - William (Cptquacks)
+# Personal Portfolio - William (Cptquacks)
 
-Un sitio web de portfolio personal moderno y responsivo para desarrollador backend y game developer, diseñado para ser alojado en GitHub Pages.
+A modern and responsive personal portfolio website for an infrastructure, backend and game developer, designed to be hosted on GitHub Pages.
 
-## 🚀 Características
+## 🚀 Features
 
-- **Diseño Moderno**: Interfaz limpia y profesional con animaciones suaves
-- **Totalmente Responsivo**: Optimizado para dispositivos móviles, tablets y desktop
-- **Secciones Completas**:
-  - Hero/Inicio con presentación personal
-  - Sobre mí con habilidades técnicas (C/C++, Java, Python, JavaScript, Node.js, Express)
-  - Desarrollo de videojuegos (Unity, Godot, MonoGame, Phaser, Love2D)
-  - Portfolio de proyectos
-  - Formulario de contacto
-- **Interactividad**: JavaScript vanilla para navegación suave y efectos
-- **GitHub Pages Ready**: Configurado para despliegue automático
+- **Modern Design**: Clean and professional interface with smooth animations
+- **Fully Responsive**: Optimized for mobile devices, tablets and desktop
+- **Complete Sections**:
+  - Hero/Home with personal introduction
+  - About me with technical skills (Python, Java, C/C++, databases, game engines)
+  - Game Development showcase (Unity, Godot, GameMaker Studio, Ren'Py, MonoGame, Phaser, Love2D)
+  - Direct contact methods (Email & GitHub)
+- **Interactivity**: Vanilla JavaScript for smooth navigation and effects
+- **GitHub Pages Ready**: Configured for automatic deployment
 
-## 📁 Estructura del Proyecto
+## 📁 Project Structure
 
 ```
 /
-├── index.html              # Página principal
-├── src/                    # Código fuente
-│   ├── css/               # Estilos CSS
-│   │   ├── main.css       # Estilos principales
-│   │   └── components.css # Componentes específicos
+├── index.html              # Main page
+├── src/                    # Source code
+│   ├── css/               # CSS styles
+│   │   ├── main.css       # Main styles
+│   │   └── components.css # Specific components
 │   └── js/                # JavaScript
-│       └── main.js        # Funcionalidad principal
-├── img/                   # Imágenes del sitio
-└── README.md              # Documentación
+│       └── main.js        # Main functionality
+├── img/                   # Site images
+│   └── profile_pic.jpg    # Profile photo
+└── README.md              # Documentation
 ```
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Technologies Used
 
-- **HTML5**: Estructura semántica moderna
+- **HTML5**: Modern semantic structure
 - **CSS3**: 
-  - Variables CSS personalizadas
-  - Grid y Flexbox para layouts
-  - Animaciones y transiciones
-  - Diseño responsivo
+  - Custom CSS variables
+  - Grid and Flexbox for layouts
+  - Animations and transitions
+  - Responsive design
 - **JavaScript ES6+**: 
-  - Funcionalidad interactiva
-  - Navegación suave
-  - Formulario de contacto
-  - Animaciones de scroll
-- **Font Awesome**: Iconos
-- **Google Fonts**: Tipografía (Inter)
+  - Interactive functionality
+  - Smooth navigation
+  - Direct contact links
+  - Scroll animations
+- **Font Awesome**: Icons
+- **Google Fonts**: Typography (Inter)
 
-## 🚀 Despliegue en GitHub Pages
+## 🚀 GitHub Pages Deployment
 
-### Opción 1: Crear repositorio nuevo
-1. Crea un nuevo repositorio en GitHub llamado `tu-usuario.github.io`
-2. Clona el repositorio localmente
-3. Copia todos los archivos de este proyecto al repositorio
-4. Haz commit y push de los cambios
+### Option 1: Create new repository
+1. Create a new repository on GitHub named `your-username.github.io`
+2. Clone the repository locally
+3. Copy all project files to the repository
+4. Commit and push changes
+5. Your site will be available at `https://your-username.github.io`
 
-### Opción 2: Usar repositorio existente
-1. Crea un repositorio con cualquier nombre
-2. Sube los archivos del proyecto
-3. Ve a Settings > Pages
-4. Selecciona la rama `main` como source
-5. Tu sitio estará disponible en `https://tu-usuario.github.io/nombre-repositorio`
+### Option 2: Use existing repository
+1. Create a repository with any name
+2. Upload project files
+3. Go to Settings > Pages
+4. Select `main` branch as source
+5. Your site will be available at `https://your-username.github.io/repository-name`
 
-## 📝 Personalización
+## 📝 Customization
 
-### Información Personal
-Edita el archivo `index.html` para actualizar:
-- Nombre y título profesional
-- Descripción personal
-- Habilidades técnicas
-- Información de contacto
+### Personal Information
+Edit the `index.html` file to update:
+- Name and professional title
+- Personal description
+- Technical skills
+- Contact information
 
-### Estilos
-Modifica las variables CSS en `src/css/main.css`:
+### Styles
+Modify CSS variables in `src/css/main.css`:
 ```css
 :root {
-    --primary-color: #6366f1;    /* Color principal */
-    --secondary-color: #f59e0b;  /* Color secundario */
-    --text-primary: #1f2937;     /* Color de texto */
-    /* ... más variables */
+    --primary-color: #6366f1;    /* Primary color */
+    --secondary-color: #f59e0b;  /* Secondary color */
+    --text-primary: #1f2937;     /* Text color */
+    /* ... more variables */
 }
 ```
 
-### Contenido
-- **Proyectos**: Actualiza la sección `#projects` con tus proyectos reales
-- **Blog**: Agrega tus posts en la sección `#blog`
-- **Imágenes**: Reemplaza las imágenes placeholder en la carpeta `img/`
+### Content
+- **Profile Photo**: Replace `img/profile_pic.jpg` with your photo
+- **Skills**: Update the technology showcase with your skills
+- **Game Engines**: Modify the game development section as needed
 
-## 📱 Características Responsivas
+## 📱 Responsive Features
 
-- **Mobile First**: Diseñado primero para móviles
+- **Mobile First**: Designed mobile-first
 - **Breakpoints**:
   - Mobile: < 768px
   - Tablet: 768px - 1024px
   - Desktop: > 1024px
-- **Navegación móvil**: Menú hamburguesa funcional
-- **Imágenes adaptables**: Se ajustan automáticamente al tamaño de pantalla
+- **Mobile navigation**: Functional hamburger menu
+- **Adaptive images**: Automatically adjust to screen size
 
-## ✨ Funcionalidades JavaScript
+## ✨ JavaScript Features
 
-- **Navegación suave**: Scroll animado entre secciones
-- **Menú móvil**: Hamburger menu responsivo
-- **Animaciones de scroll**: Elementos aparecen al hacer scroll
-- **Formulario de contacto**: Validación y feedback visual
-- **Navbar dinámico**: Cambia de estilo al hacer scroll
-- **Imágenes placeholder**: Generación automática de placeholders
+- **Smooth navigation**: Animated scroll between sections
+- **Mobile menu**: Responsive hamburger menu
+- **Scroll animations**: Elements appear on scroll
+- **Direct contact**: Functional email and GitHub links
+- **Dynamic navbar**: Changes style on scroll
+- **Profile image**: Interactive hover effects
 
-## 🎨 Personalización Avanzada
+## 🎨 Advanced Customization
 
-### Agregar nuevas secciones
-1. Añade la sección HTML en `index.html`
-2. Agrega los estilos correspondientes en CSS
-3. Actualiza la navegación si es necesario
+### Adding new sections
+1. Add HTML section to `index.html`
+2. Add corresponding CSS styles
+3. Update navigation if needed
 
-### Integrar con servicios externos
-- **Formulario de contacto**: Integra con Netlify Forms, Formspree, o EmailJS
-- **Blog**: Conecta con un CMS headless como Strapi o Contentful
-- **Analytics**: Añade Google Analytics o similar
+### External services integration
+- **Contact**: Integrate with Netlify Forms, Formspree, or EmailJS
+- **Analytics**: Add Google Analytics or similar
+- **Performance**: Optimize images and add lazy loading
 
-## 📞 Contacto
+## 📞 Contact
 
 - **GitHub**: [Cptquacks](https://github.com/Cptquacks)
 - **Email**: zgenshinzgenshin@gmail.com
 
-## 📄 Licencia
+## 📄 License
 
-Este proyecto está bajo la Licencia MIT. Siéntete libre de usarlo y modificarlo según tus necesidades.
+This project is under the MIT License. Feel free to use and modify it according to your needs.
 
 ---
 
-¡Hecho con ❤️ por Cptquacks!
+Made with ❤️ by Cptquacks!
