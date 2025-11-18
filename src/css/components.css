@@ -1,3 +1,189 @@
+/* Backend Development Section */
+.backend {
+    background-color: #f8fafc;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.backend .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.backend h2.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1e40af;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.backend-content {
+    max-width: 65ch;
+    margin: 0 auto 4rem;
+    text-align: center;
+}
+
+.backend-content p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 0;
+}
+
+.backend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.backend-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+}
+
+.backend-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #3b82f6;
+}
+
+.backend-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.75rem;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.backend-item:hover .backend-icon {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.backend-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e40af;
+    transition: color 0.2s ease;
+}
+
+.backend-item:hover h3 {
+    color: #1e3a8a;
+}
+
+.backend-item p {
+    color: #4b5563;
+    line-height: 1.75;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+
+/* Skills Section */
+.tech-expertise {
+    width: 100%;
+}
+
+.skill-category {
+    margin-bottom: 3rem;
+}
+
+.skill-category:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #e2e8f0;
+    position: relative;
+}
+
+.skill-category-title::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100px;
+    height: 2px;
+    background-color: #3b82f6;
+}
+
+.technology-showcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tech-badge {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 50px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.tech-badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-color: #3b82f6;
+}
+
+.tech-badge i {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+    color: #3b82f6;
+}
+
+.tech-badge span {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .technology-showcase {
+        gap: 0.75rem;
+    }
+    
+    .tech-badge {
+        padding: 0.5rem 1rem;
+    }
+    
+    .tech-badge i {
+        font-size: 1.1rem;
+    }
+    
+    .tech-badge span {
+        font-size: 0.9rem;
+    }
+}
+
 /* Game Development Section */
 .gamedev {
     background-color: var(--bg-primary);
