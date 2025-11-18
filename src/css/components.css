@@ -1,3 +1,116 @@
+/* Backend Development Section */
+.backend {
+    background-color: #f8fafc;
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.backend .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+}
+
+.backend h2.section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #1e40af;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.backend-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.backend-text p {
+    font-size: 1.125rem;
+    color: #4b5563;
+    line-height: 1.75;
+    margin-bottom: 3rem;
+}
+
+.backend-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.backend-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.backend-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #3b82f6;
+}
+
+.backend-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    color: white;
+    font-size: 1.75rem;
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.backend-item:hover .backend-icon {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.backend-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e40af;
+    transition: color 0.2s ease;
+}
+
+.backend-item:hover h3 {
+    color: #1e3a8a;
+}
+
+.backend-item p {
+    color: #4b5563;
+    line-height: 1.75;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .backend-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .backend-item {
+        padding: 1.5rem;
+    }
+    
+    .backend h2.section-title {
+        font-size: 2rem;
+    }
+}
+
 /* Game Development Section */
 .gamedev {
     background-color: var(--bg-primary);
