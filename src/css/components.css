@@ -1,23 +1,21 @@
 /* Backend Development Section */
 .backend {
-    background-color: #f8fafc;
+    background-color: var(--bg-secondary);
     position: relative;
     overflow: hidden;
-    border-top: 1px solid #e2e8f0;
-    border-bottom: 1px solid #e2e8f0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .backend .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 5rem 2rem;
+    padding: var(--spacing-3xl) var(--spacing-lg);
 }
 
 .backend h2.section-title {
     text-align: center;
-    margin-bottom: 3rem;
-    color: #1e40af;
-    font-size: 2.5rem;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--primary-dark);
+    font-size: var(--font-size-4xl);
     font-weight: 700;
 }
 
@@ -28,48 +26,48 @@
 }
 
 .backend-text p {
-    font-size: 1.125rem;
-    color: #4b5563;
-    line-height: 1.75;
-    margin-bottom: 3rem;
+    font-size: var(--font-size-lg);
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .backend-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: var(--spacing-2xl);
+    margin-top: var(--spacing-2xl);
 }
 
 .backend-item {
-    background: white;
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: var(--bg-primary);
+    padding: var(--spacing-2xl);
+    border-radius: var(--border-radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition-normal);
     text-align: center;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--border-color);
 }
 
 .backend-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-    border-color: #3b82f6;
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
 }
 
 .backend-icon {
     width: 80px;
     height: 80px;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto var(--spacing-lg);
     color: white;
-    font-size: 1.75rem;
-    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.3);
-    transition: transform 0.3s ease;
+    font-size: var(--font-size-3xl);
+    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.3);
+    transition: var(--transition-normal);
 }
 
 .backend-item:hover .backend-icon {
@@ -77,21 +75,21 @@
 }
 
 .backend-item h3 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-xl);
     font-weight: 600;
-    margin-bottom: 1rem;
-    color: #1e40af;
-    transition: color 0.2s ease;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-primary);
+    transition: var(--transition-fast);
 }
 
 .backend-item:hover h3 {
-    color: #1e3a8a;
+    color: var(--primary-dark);
 }
 
 .backend-item p {
-    color: #4b5563;
-    line-height: 1.75;
-    font-size: 1.125rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    font-size: var(--font-size-base);
     margin-bottom: 0;
 }
 
@@ -99,21 +97,37 @@
 @media (max-width: 768px) {
     .backend-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: var(--spacing-lg);
     }
     
     .backend-item {
-        padding: 1.5rem;
+        padding: var(--spacing-xl);
     }
     
     .backend h2.section-title {
-        font-size: 2rem;
+        font-size: var(--font-size-3xl);
     }
 }
 
 /* Game Development Section */
 .gamedev {
     background-color: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.gamedev .container {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+}
+
+.gamedev h2.section-title {
+    text-align: center;
+    margin-bottom: var(--spacing-2xl);
+    color: var(--text-primary);
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
 }
 
 .gamedev-content {
@@ -125,8 +139,8 @@
 .gamedev-text p {
     font-size: var(--font-size-lg);
     color: var(--text-secondary);
-    margin-bottom: var(--spacing-3xl);
     line-height: 1.8;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .gamedev-grid {
@@ -137,17 +151,19 @@
 }
 
 .gamedev-item {
-    background: white;
+    background: var(--bg-primary);
     padding: var(--spacing-2xl);
     border-radius: var(--border-radius-xl);
     box-shadow: var(--shadow-md);
     transition: var(--transition-normal);
     text-align: center;
+    border: 1px solid var(--border-color);
 }
 
 .gamedev-item:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
 }
 
 .gamedev-icon {
@@ -159,11 +175,14 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto var(--spacing-lg);
+    color: white;
+    font-size: var(--font-size-3xl);
+    box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.3);
+    transition: var(--transition-normal);
 }
 
-.gamedev-icon i {
-    font-size: var(--font-size-3xl);
-    color: white;
+.gamedev-item:hover .gamedev-icon {
+    transform: scale(1.05) rotate(5deg);
 }
 
 .gamedev-item h3 {
@@ -171,11 +190,34 @@
     font-weight: 600;
     margin-bottom: var(--spacing-md);
     color: var(--text-primary);
+    transition: var(--transition-fast);
+}
+
+.gamedev-item:hover h3 {
+    color: var(--primary-dark);
 }
 
 .gamedev-item p {
     color: var(--text-secondary);
     line-height: 1.6;
+    font-size: var(--font-size-base);
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gamedev-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+    
+    .gamedev-item {
+        padding: var(--spacing-xl);
+    }
+    
+    .gamedev h2.section-title {
+        font-size: var(--font-size-3xl);
+    }
 }
 
 
