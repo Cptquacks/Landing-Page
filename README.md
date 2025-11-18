@@ -1,103 +1,72 @@
-# Personal Portfolio - William (Cptquacks)
+# William's Portfolio
 
-A modern and responsive personal portfolio website for an infrastructure, backend and game developer, designed to be hosted on GitHub Pages.
+A professional portfolio website showcasing my work as a Full-Stack and Game Developer.
 
 ## 🚀 Features
 
-- **Modern Design**: Clean and professional interface with smooth animations
-- **Fully Responsive**: Optimized for mobile devices, tablets and desktop
-- **Complete Sections**:
-  - Hero/Home with personal introduction
-  - About me with technical skills (Python, Java, C/C++, databases, game engines)
-  - Game Development showcase (Unity, Godot, GameMaker Studio, Ren'Py, MonoGame, Phaser, Love2D)
-  - Direct contact methods (Email & GitHub)
-- **Interactivity**: Vanilla JavaScript for smooth navigation and effects
-- **GitHub Pages Ready**: Configured for automatic deployment
+- **Clean Design**: Professional interface with smooth animations
+- **Fully Responsive**: Optimized for all devices
+- **Key Sections**:
+  - Home with introduction
+  - About me with technical skills
+  - Backend Development expertise
+  - Game Development projects
+  - Contact information
+- **Interactive Elements**: Smooth navigation and hover effects
+- **GitHub Pages Ready**: Easy deployment
 
 ## 📁 Project Structure
 
 ```
 /
 ├── index.html              # Main page
-├── src/                    # Source code
+├── src/                   
 │   ├── css/               # CSS styles
 │   │   ├── main.css       # Main styles
-│   │   └── components.css # Specific components
+│   │   └── components.css # Component styles
 │   └── js/                # JavaScript
-│       └── main.js        # Main functionality
-├── img/                   # Site images
-│   └── profile_pic.jpg    # Profile photo
-└── README.md              # Documentation
+│       └── main.js        # Core functionality
+├── img/                   # Image assets
+│   └── profile_pic.jpg    # Profile image
+└── README.md              # This file
 ```
 
 ## 🛠️ Technologies Used
 
-- **HTML5**: Modern semantic structure
-- **CSS3**: 
-  - Custom CSS variables
-  - Grid and Flexbox for layouts
-  - Animations and transitions
-  - Responsive design
-- **JavaScript ES6+**: 
-  - Interactive functionality
-  - Smooth navigation
-  - Direct contact links
-  - Scroll animations
-- **Font Awesome**: Icons
-- **Google Fonts**: Typography (Inter)
+- **Frontend**:
+  - HTML5 & CSS3
+  - JavaScript (ES6+)
+  - Responsive Design
+  - CSS Grid & Flexbox
+  - CSS Variables
+  - Custom Animations
 
-## 🚀 GitHub Pages Deployment
+- **Backend & Tools**:
+  - Node.js
+  - Express.js
+  - Various Databases
+  - Version Control (Git)
 
-### Option 1: Create new repository
-1. Create a new repository on GitHub named `your-username.github.io`
-2. Clone the repository locally
-3. Copy all project files to the repository
-4. Commit and push changes
-5. Your site will be available at `https://your-username.github.io`
+## 🚀 Deployment
 
-### Option 2: Use existing repository
-1. Create a repository with any name
-2. Upload project files
-3. Go to Settings > Pages
-4. Select `main` branch as source
-5. Your site will be available at `https://your-username.github.io/repository-name`
+1. Fork this repository
+2. Update content in `index.html`
+3. Customize styles in `src/css/`
+4. Deploy to GitHub Pages or your preferred hosting
 
 ## 📝 Customization
 
-### Personal Information
-Edit the `index.html` file to update:
-- Name and professional title
-- Personal description
-- Technical skills
-- Contact information
+1. Update personal information in `index.html`
+2. Modify colors in `src/css/main.css`
+3. Replace `img/profile_pic.jpg` with your photo
+4. Update skills and projects as needed
 
-### Styles
-Modify CSS variables in `src/css/main.css`:
-```css
-:root {
-    --primary-color: #6366f1;    /* Primary color */
-    --secondary-color: #f59e0b;  /* Secondary color */
-    --text-primary: #1f2937;     /* Text color */
-    /* ... more variables */
-}
-```
+## 📱 Responsive Design
 
-### Content
-- **Profile Photo**: Replace `img/profile_pic.jpg` with your photo
-- **Skills**: Update the technology showcase with your skills
-- **Game Engines**: Modify the game development section as needed
-
-## 📱 Responsive Features
-
-- **Mobile First**: Designed mobile-first
-- **Breakpoints**:
-  - Mobile: < 768px
-  - Tablet: 768px - 1024px
-  - Desktop: > 1024px
-- **Mobile navigation**: Functional hamburger menu
-- **Adaptive images**: Automatically adjust to screen size
-
-## ✨ JavaScript Features
+- Mobile-first approach
+- Adaptive layouts
+- Optimized navigation
+- Consistent experience across devices
 
 - **Smooth navigation**: Animated scroll between sections
 - **Mobile menu**: Responsive hamburger menu
