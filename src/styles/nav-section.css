@@ -1,0 +1,120 @@
+nav {
+    transition: all 3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+nav.scroll {
+    background-color: color-mix(in srgb, var(--background) 85%, transparent);
+    backdrop-filter: blur(8px);
+    box-shadow: 0px 0px 10px 3px 
+        color-mix(in srgb, var(--background) 80%, black);
+}
+
+nav h4 {
+    background: 
+        linear-gradient(
+            50deg,
+            var(--text) 10%,
+            var(--accent) 80%
+        );
+
+    -webkit-background-clip: text; /* For Safari and Chrome */
+    background-clip: text;         /* Standard syntax */
+    color: transparent;
+}
+
+nav ul li a {
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text);
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    color: var(--primary);
+}
+
+nav ul li a::after {
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: block;
+
+    position: relative;
+    top: 8px;
+
+    justify-self: center;
+    align-content: center;
+
+    content: "";
+    background-color: var(--primary);
+
+    height: 2px;
+    width: 100%;
+    transform: scaleX(0);
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+nav .menu-button {
+    display: none;
+}
+
+aside {
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    display: flex;
+    position: fixed;
+    top: 0; left: -50dvw;
+    width: 50dvw;
+    height: 100dvh;
+    background-color: var(--background);
+    z-index: 101;
+}
+
+body:has(aside.active) section, body:has(aside.active) nav, body:has(aside.active) footer {
+    filter: blur(8px) !important;
+}
+
+@media (width <= 450px) {
+    nav {
+        position: fixed;
+        top: 0; left: 0;
+        width: 100dvw;
+        padding: .5rem .8rem;
+        z-index: 100;
+    }
+
+    nav .menu-button {
+        transition: all .3s ease-in-out;
+        display: flex;
+    }
+
+    nav .menu-button.active {
+        opacity: .8;
+        transform: rotate(90deg);
+    }
+
+    aside.active {
+        display: flex;
+        left: 0;
+    }
+
+    aside ul {
+        width: -webkit-fill-available;
+        font-size: 20px;
+        list-style: none;
+        padding: 1rem 2rem;
+        gap: 1rem;
+    }
+
+    aside ul li a {
+        transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--text);
+    }
+
+    nav ul {
+        display: none !important;
+    }
+}
