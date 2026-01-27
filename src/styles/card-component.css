@@ -1,0 +1,168 @@
+.skill-card {
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: .3rem;
+    padding: 1.2rem 0rem;
+    margin: auto;
+
+    border-radius: var(--round);
+
+    font-size: 18px;
+    font-weight: bold;
+    background-color: var(--primary);
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 10px .5px black;
+}
+
+.skill-card-big {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    justify-content: space-between;
+        align-items: center;
+        text-align: center;
+
+    background-color: var(--primary);
+    gap: 1rem;
+
+    padding: 2rem 2rem 4rem;
+    margin: 0 .3rem;
+    border: 1px solid var(--primary);
+
+    word-break: keep-all;
+    word-wrap: break-word;
+
+    box-shadow: 0 0 0 0 transparent;
+}
+
+.skill-card-big #icon {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: 5.5rem;
+
+    color: var(--primary);
+    background-color: var(--text);
+
+    padding: 1.2rem 0rem;
+    border-radius: 20mm;
+}
+
+.skill-card-big p {
+    line-height: 1.5rem !important;
+}
+
+.skill-card-big:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--text);
+    box-shadow: 0 10px 10px .5px black;
+}
+
+.skill-card-big:hover #icon {
+    transform: rotate(5deg);
+    box-shadow: 0 0 13px var(--text);
+}
+
+.contact-card {
+    transition: all .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+    width: -webkit-fill-available;
+    align-items: center;
+    background-color: var(--primary);
+
+    padding: 1rem 2rem;
+    gap: 2rem;
+
+    border-radius: var(--round);
+}
+
+.contact-card #icon {
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    color: var(--primary);
+    background-color: var(--text);
+
+    padding: .8rem;
+    border-radius: 100%;
+}
+
+.contact-card a {
+    text-decoration: none;
+}
+
+.contact-card p {
+    line-height: 1.3rem !important;
+}
+
+.contact-card:hover {
+    cursor: pointer;
+    color: var(--background) !important;
+    background-color: var(--text);
+
+    transform: translateY(-10px);
+}
+
+.contact-card:hover #icon {
+    color: var(--text);
+    background: linear-gradient(
+        145deg,
+        var(--primary) 50%,
+        var(--secondary) 90%,
+        var(--accent) 10%
+        
+    );
+}
+
+.contact-card:hover p {
+    opacity: .8;
+}
+
+.contact-card:hover a {
+    color: var(--primary);
+}
+
+.ingredient-card {
+    width: -webkit-fill-available;
+    
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    
+    padding: 1rem 2rem;
+    gap: 2rem;
+
+    border-radius: var(--round-lg);
+    border: 1px solid color-mix(in srgb, var(--background) 80%, white);
+    background-color: color-mix(in srgb, var(--background) 93%, white);
+
+}
+
+.ingredient-card p {
+    line-height: 1.3rem !important;
+}
+
+
+@media (width <= 450px) {
+    .skill-card-big {
+        text-align: center !important;
+        padding: 1rem;
+        font-size: 12px;
+        gap: .5rem;
+    }
+
+    .skill-card-big p {
+        line-height: .8rem !important;
+    }
+
+    .skill-card-big #icon {
+        width: 3.5rem !important;
+        font-size: 25px;
+        padding: 1rem 0;
+    }
+}

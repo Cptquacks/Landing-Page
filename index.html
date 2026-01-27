@@ -1,392 +1,881 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>William (Cptquacks) - Personal Portfolio</title>
-    <meta name="description" content="William's personal portfolio - Infrastructure, Backend and Game Developer specialized in Python, Java and C/C++">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="src/css/main.css">
-    <link rel="stylesheet" href="src/css/components.css">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- Icons -->
+    <title>William | Computer Science Engineer & Game Dev</title>
+
+    <meta name="description" content="
+        Portfolio of William, a Computer Science Engineer specializing in Backend, 
+        Frontend, and Game Development. Building robust, scalable, and reliable 
+        software solutions.
+    ">
+    <meta name="keywords" content="
+        Software Engineer, 
+        Backend Developer, 
+        Game Developer, 
+        William Portfolio, 
+        Computer Science, 
+        React, 
+        TypeScript, 
+        C++, 
+        APIs
+    ">
+    <meta name="author" content="William">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://furokawa-dev-homepage.onrender.com/">
+    <meta property="og:title" content="William | Computer Science Engineer">
+    <meta property="og:description" content="Explore my projects in Backend systems, modern Frontend, and Game Engine architecture.">
+    <meta property="og:image" content="https://furokawa-dev-homepage.onrender.com/img/profile_pic.webp"> 
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://furokawa-dev-homepage.onrender.com/">
+    <meta property="twitter:title" content="William | Computer Science Engineer">
+    <meta property="twitter:description" content="Passionate developer building reliable software and immersive games.">
+    <meta property="twitter:image" content="https://furokawa-dev-homepage.onrender.com/img/profile_pic.webp">
+    <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="/src/styles/schema.css">
+    <link rel="stylesheet" href="/src/styles/nav-section.css">
+    <link rel="stylesheet" href="/src/styles/hero-section.css">
+    <link rel="stylesheet" href="/src/styles/card-component.css">
+
+    <script defer src="src/scripts/scroll.js"></script>
+    <script defer src="src/scripts/navmenu.js"></script>
+
+    <title>William Blank | Full-Stack & Game Developer</title>
 </head>
+
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#home">William</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#backend" class="nav-link">Backend</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#gamedev" class="nav-link">Game Dev</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+    <nav class="flex-row scroll">
+        <h4>Welcome!</h4>
+        <span class="menu-button fa fa-bars fa-2x"></span>
+
+        <ul class="flex-row">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#backend">Backend</a>
+            </li>
+            <li>
+                <a href="#frontend">Frontend</a>
+            </li>
+            <li>
+                <a href="#gamedev">Game Dev</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="main-intro-wrapper">
-            <div class="intro-text-area">
-                <h1 class="main-heading">
-                    Hi, I'm <span class="highlight">William</span>
-                </h1>
-                <p class="intro-description">
-                    Infrastructure, Backend and Game Development specialized programmer
+    <aside>
+        <ul class="flex-col">
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#backend">Backend</a>
+            </li>
+            <li>
+                <a href="#frontend">Frontend</a>
+            </li>
+            <li>
+                <a href="#gamedev">Game Dev</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </aside>
+
+    <section class="hero-heading flex-row" style="
+        margin-top: 10rem !important; 
+        justify-content: space-between;
+        margin: 0 8rem;
+        gap: 3rem;
+    ">
+        <div class="flex-col" style="
+            gap: 1rem;
+            justify-content: center;
+            align-items: left;
+        ">
+            <div class="flex-col">
+                <h3>Hi, I'm William</h3>
+                <h3>Full-Stack
+                    <span class="gradient-text">Developer</span>
+                </h3>
+            </div>
+
+            <div>
+                <p class="oppacity-lg">
+                    Specialized Frontend Web Developer, Backend Engineer
+                    and Game Developer
                 </p>
-                <div class="action-buttons">
-                    <a href="#about" class="btn btn-primary">Learn More</a>
-                    <a href="#contact" class="btn btn-secondary">Contact</a>
-                </div>
             </div>
-            <div class="profile-photo-section">
-                <div class="profile-image">
-                    <img src="img/profile_pic.jpg" alt="William Profile" id="william-photo">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="personal-info-wrapper">
-                <div class="personal-story">
-                    <p>
-                        Hello! I'm William. 
-                        Since I was young, I've been fascinated by the world of programming and 
-                        video games, and that passion led me to become a professional developer. 
-                        I specialize in creating robust backend and infrastructure solutions and
-                        game development.
-                    </p>
-                    <p>
-                        What I enjoy most is working in teams developing video games - there's something magical 
-                        about seeing creative ideas come to life through code. My natural curiosity has led me 
-                        to explore multiple technologies and languages, from databases to game engines, always 
-                        eager to learn something new.
-                    </p>
-                    <p>
-                        I firmly believe in clear communication and collaborative work. Every project is an 
-                        opportunity to grow, both technically and personally.
-                    </p>
-                    <div class="tech-expertise">
-                        <h3>Skills</h3>
-                        <div class="technology-showcase">
-                            <div class="tech-badge">
-                                <i class="fab fa-python"></i>
-                                <span>Python</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-java"></i>
-                                <span>Java</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-code"></i>
-                                <span>C/C++</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-database"></i>
-                                <span>SQL/PostgreSQL</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-database"></i>
-                                <span>MySQL/SQLite</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-js-square"></i>
-                                <span>JavaScript</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-html5"></i>
-                                <span>HTML</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-css3-alt"></i>
-                                <span>CSS</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-code"></i>
-                                <span>TypeScript</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-node-js"></i>
-                                <span>Node.js</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-database"></i>
-                                <span>Prisma ORM</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-server"></i>
-                                <span>Express.js</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-gamepad"></i>
-                                <span>Unity</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-cube"></i>
-                                <span>Godot</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-heart"></i>
-                                <span>Ren'Py</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-gamepad"></i>
-                                <span>GameMaker Studio</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-puzzle-piece"></i>
-                                <span>MonoGame</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-heart"></i>
-                                <span>Love2D</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-code"></i>
-                                <span>Phaser</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-gem"></i>
-                                <span>Ruby</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-php"></i>
-                                <span>PHP</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-leaf"></i>
-                                <span>MongoDB</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fas fa-code"></i>
-                                <span>RGSS</span>
-                            </div>
-                            <div class="tech-badge">
-                                <i class="fab fa-git-alt"></i>
-                                <span>Git</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="flex-row" style="gap: .5rem; margin-top: 3rem;">
+                <a href="#about" class="button">Learn more</a>
+                <a href="#contact" class="button alt">Contact!</a>
             </div>
         </div>
-    </section>
 
-    <!-- Backend Development Section -->
-    <section id="backend" class="backend">
-        <div class="container">
-            <h2 class="section-title">Backend Development</h2>
-            <div class="backend-content">
-                <div class="backend-text">
-                    <p>
-                        I specialize in building robust and scalable backend systems. My expertise includes designing and 
-                        implementing efficient APIs, databases, and server architectures that power modern web applications.
-                    </p>
-                </div>
-                <div class="backend-grid">
-                    <div class="backend-item">
-                        <div class="backend-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>API Development</h3>
-                        <p>Designing and implementing RESTful and GraphQL APIs with proper documentation and versioning</p>
-                    </div>
-                    <div class="backend-item">
-                        <div class="backend-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3>Database Design</h3>
-                        <p>SQL and NoSQL database architecture, optimization, and migration strategies</p>
-                    </div>
-                    <div class="backend-item">
-                        <div class="backend-icon">
-                            <i class="fas fa-cloud"></i>
-                        </div>
-                        <h3>Cloud Infrastructure</h3>
-                        <p>Deployment and management of applications on AWS, GCP, and Azure cloud platforms</p>
-                    </div>
-                    <div class="backend-item">
-                        <div class="backend-icon">
-                            <i class="fas fa-code-branch"></i>
-                        </div>
-                        <h3>Microservices</h3>
-                        <p>Designing and implementing scalable microservices architectures</p>
-                    </div>
-                    <div class="backend-item">
-                        <div class="backend-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Security</h3>
-                        <p>Implementing authentication, authorization, and security best practices</p>
-                    </div>
-                    <div class="backend-item">
-                        <div class="backend-icon">
-                            <i class="fas fa-tachometer-alt"></i>
-                        </div>
-                        <h3>Performance</h3>
-                        <p>Optimizing application performance and database queries</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Game Development Section -->
-    <section id="gamedev" class="gamedev">
-        <div class="container">
-            <h2 class="section-title">Game Development</h2>
-            <div class="gamedev-content">
-                <div class="gamedev-text">
-                    <p>
-                        Video games have always been my passion. I've been fortunate to work with incredible 
-                        teams, creating everything from small indie games to more ambitious prototypes. I love 
-                        experimenting with different engines and frameworks - each one has its own personality 
-                        and teaches me something new about the art of creating interactive experiences.
-                    </p>
-                </div>
-                <div class="gamedev-grid">
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>Unity</h3>
-                        <p>2D and 3D game development, gameplay systems, interactive UI/UX</p>
-                    </div>
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-cube"></i>
-                        </div>
-                        <h3>Godot</h3>
-                        <p>Open-source engine for indie projects, scripting in GDScript and C#</p>
-                    </div>
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-puzzle-piece"></i>
-                        </div>
-                        <h3>MonoGame</h3>
-                        <p>C# framework for cross-platform game development</p>
-                    </div>
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <h3>Phaser</h3>
-                        <p>JavaScript framework for 2D web games with HTML5</p>
-                    </div>
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-heart"></i>
-                        </div>
-                        <h3>Love2D</h3>
-                        <p>Lua framework for small 2D game development</p>
-                    </div>
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <h3>GameMaker Studio</h3>
-                        <p>Engine specialized in 2D games with GML and visual tools</p>
-                    </div>
-                    <div class="gamedev-item">
-                        <div class="gamedev-icon">
-                            <i class="fas fa-book"></i>
-                        </div>
-                        <h3>Ren'Py</h3>
-                        <p>Python engine for visual novels and interactive narrative games</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <img src="img/profile_pic.png" alt="My Profile Pic">
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content-centered">
-                <div class="contact-info-main">
-                    <h3>Let's Connect!</h3>
-                    <p>If you're interested in my profile or this website and need any of my services, 
-                    feel free to contact me. I'm always open to new opportunities and collaborations!</p>
-                    
-                    <div class="contact-methods-grid">
-                        <a href="mailto:zgenshinzgenshin@gmail.com" class="contact-method contact-method-link">
-                            <div class="contact-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>Email Me</h4>
-                                <span>zgenshinzgenshin@gmail.com</span>
-                                <p>Send me an email directly</p>
-                            </div>
-                        </a>
-                        
-                        <a href="https://github.com/Cptquacks" target="_blank" class="contact-method contact-method-link">
-                            <div class="contact-icon">
-                                <i class="fab fa-github"></i>
-                            </div>
-                            <div class="contact-details">
-                                <h4>GitHub Profile</h4>
-                                <span>github.com/Cptquacks</span>
-                                <p>Check out my GitHub</p>
-                            </div>
-                        </a>
-                    </div>
+    <section id="about" class="flex-col" style="
+        text-align: center; 
+        gap: 2rem;
+    ">
+        <h4>About Me</h4>
+        <p class="oppacity-lg">
+            Hello, my name is William. Since I was a young boy, I have been greatly
+            fascinated by the world of computers, especially by the video games of my
+            childhood and the mechanics behind complex systems. That passion led me
+            to become a programmer, eventually earning my degree in Computer Science.
+        </p>
+
+        <p class="oppacity-lg">
+            What I enjoy most is building robust and reliable software, such as
+            databases, SaaS, web apps, and games. Whether working in a team or
+            independently, I love making things work and solving real-world
+            problems through code.
+        </p>
+
+        <p class="oppacity-lg">
+            My natural curiosity has driven me to research various languages,
+            paradigms, and fields. This has allowed me to develop a versatile
+            skillset, involving myself in projects like backend services for my
+            university, game engines built from scratch, and modern frontend
+            web development.
+        </p>
+
+        <p class="oppacity-lg">
+            I firmly believe in the value of teamwork and clear communication to
+            create high-quality software. For me, every project is an opportunity
+            to improve my toolset, mindset, and professional skills.
+        </p>
+    </section>
+
+
+    <section id="skills" class="flex-col" style="
+        text-align: center; 
+        gap: 5rem; 
+        justify-content: center;
+        align-items: center;
+    ">
+        <h4>Programming Languages</h4>
+        <div class="skills-panel">
+
+            <div class="skill-card">
+                <span id="icon" class="fab fa-python fa-4x"></span>
+                <p>Python</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-ruby-plain fa-4x"></span>
+                <p>Ruby</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-php-plain fa-4x"></span>
+                <p>PHP</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="fab fa-java fa-4x"></span>
+                <p>Java</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-c-original fa-4x"></span>
+                <p>C lang</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-cplusplus-plain fa-4x"></span>
+                <p>C++</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-csharp-plain fa-4x"></span>
+                <p>C++</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-javascript-plain fa-4x"></span>
+                <p>JavaScript</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-typescript-plain fa-4x"></span>
+                <p>TypeScript</p>
+            </div>
+
+        </div>
+
+        <h4>Databases</h4>
+
+        <div class="skills-panel">
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-sqlite-plain fa-4x"></span>
+                <p>SQLite3</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-mysql-plain fa-4x"></span>
+                <p>MySQL</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-postgresql-plain fa-4x"></span>
+                <p>PostgreSQL</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-mongodb-plain fa-4x"></span>
+                <p>MongoDB</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-graphql-plain fa-4x"></span>
+                <p>GraphQL</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-redis-plain fa-4x"></span>
+                <p>RedisDB</p>
+            </div>
+
+        </div>
+
+        <h4>Toolsets & Frameworks</h4>
+
+        <div class="skills-panel">
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-vitejs-plain fa-4x"></span>
+                <p>Vite</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-react-original fa-4x"></span>
+                <p>React</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-nextjs-plain fa-4x"></span>
+                <p>NextJS</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-angular-plain fa-4x"></span>
+                <p>Angular</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-svelte-plain fa-4x"></span>
+                <p>Svelte</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-prisma-plain fa-4x"></span>
+                <p>Prisma</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-tailwindcss-plain fa-4x"></span>
+                <p>Tailwind</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-nodejs-plain fa-4x"></span>
+                <p>NodeJS</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-bun-plain fa-4x"></span>
+                <p>BunJS</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-flask-plain fa-4x"></span>
+                <p>Flask</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-laravel-plain fa-4x"></span>
+                <p>Laravel</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-fastapi-plain fa-4x"></span>
+                <p>FastAPI</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-rails-plain fa-4x"></span>
+                <p>Rails</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-spring-original fa-4x"></span>
+                <p>Spring</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-express-original fa-4x"></span>
+                <p>ExpressJS</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-nestjs-plain fa-4x"></span>
+                <p>NestJS</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-electron-original fa-4x"></span>
+                <p>Electron</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-docker-plain fa-4x"></span>
+                <p>Docker</p>
+            </div>
+
+        </div>
+
+        <h4>Game Development</h4>
+
+        <div class="skills-panel">
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-unity-plain fa-4x"></span>
+                <p>Unity</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-godot-plain fa-4x"></span>
+                <p>Godot</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-renpy-plain fa-4x"></span>
+                <p>Ren'Py'</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-love2d-plain fa-4x"></span>
+                <p>Love2D</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-monogame-plain fa-4x"></span>
+                <p>Monogame</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-opengl-plain fa-4x"></span>
+                <p>OpenGL</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-vulkan-plain fa-4x"></span>
+                <p>Vulkan3D</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-sdl-plain fa-4x"></span>
+                <p>SDL</p>
+            </div>
+
+        </div>
+
+        <h4>Others</h4>
+        <div class="skills-panel">
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-blender-original fa-4x"></span>
+                <p>Blender</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-html5-plain fa-4x"></span>
+                <p>HTML</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-css3-plain fa-4x"></span>
+                <p>CSS</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-git-plain fa-4x"></span>
+                <p>GIT</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-gitlab-plain fa-4x"></span>
+                <p>GitLab</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-linux-plain fa-4x"></span>
+                <p>Linux Systems</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="devicon-bash-plain fa-4x"></span>
+                <p>Shell Use</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="fas fa-language fa-4x"></span>
+                <p>Spanish Native</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="fas fa-language fa-4x"></span>
+                <p>English C1</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="fas fa-language fa-4x"></span>
+                <p>German B1</p>
+            </div>
+
+            <div class="skill-card">
+                <span id="icon" class="fas fa-language fa-4x"></span>
+                <p>Russian A2</p>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="backend" class="flex-col" style="
+        text-align: center; 
+        gap: 5rem; 
+        justify-content: center;
+        align-items: center;
+        margin-inline: 10rem;
+    ">
+
+        <div>
+            <h4>Backend Development</h4>
+            <p class="oppacity-lg">
+                I love to build solid and reliable systems as i love to make
+                them fast and easy to use and maintain.
+                My expertise includes designing, building and implementing APIs,
+                Databases and server architectures that could power modern Web
+                Apps.
+            </p>
+        </div>
+        <div class="dedicated-skill-panel">
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-server fa-3x"></span>
+
+                <h5>API Development</h5>
+                <p class="oppacity-lg">
+                    Designing and implementing
+                    RESTful, GraphQL or CRUD APIs
+                    with proper documentation and
+                    versioning.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-database fa-3x"></span>
+
+                <h5>Database Design</h5>
+                <p class="oppacity-lg">
+                    Designing and implementing
+                    RESTful, GraphQL or CRUD APIs
+                    with proper documentation and
+                    versioning.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-cloud fa-3x"></span>
+                <h5>Cloud Infrastructure</h5>
+                <p class="oppacity-lg">
+                    Deployment and management of
+                    Applications on AWS, GCP, Azure
+                    and much more cloud platforms
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-code-branch fa-3x"></span>
+                <h5>Micro Services</h5>
+                <p class="oppacity-lg">
+                    Designing, implementing and deployment
+                    of fast, scalable and reliable microservice
+                    architectures
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-shield fa-3x"></span>
+                <h5>Security</h5>
+                <p class="oppacity-lg">
+                    Planning and implementing the most
+                    reliable and secure methods of auth,
+                    encryption, etc
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-gauge-high fa-3x"></span>
+                <h5>Optimization</h5>
+                <p class="oppacity-lg">
+                    Optimization of SQL queries,
+                    Database related operations and
+                    Application resources
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="frontend" class="flex-col" style="
+        text-align: center; 
+        gap: 5rem; 
+        justify-content: center;
+        align-items: center;
+        margin-inline: 10rem;
+    ">
+
+        <div>
+            <h4>Frontend Development</h4>
+            <p class="oppacity-lg">
+                I enjoy building modern and gorgeus looking UI as i enjoy reasearching
+                for making the best posible UX at the frontend, making reusable
+                and reliable components to build this Interfaces. My expertise includes
+                designing UI reusable Components, researching and implementing of the
+                best UX that years of experience could offer to power modern Web Apps.
+
+            </p>
+        </div>
+
+        <div class="dedicated-skill-panel">
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-layer-group fa-3x"></span>
+                <h5>Component Architecture</h5>
+                <p class="oppacity-lg">
+                    Building modular, reusable, and maintainable
+                    UI components using modern frameworks
+                    to ensure scalability and consistency.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-mobile-screen fa-3x"></span>
+                <h5>Responsive Design</h5>
+                <p class="oppacity-lg">
+                    Creating fluid and adaptive interfaces
+                    that provide a seamless experience across
+                    all devices, from mobile to ultra-wide monitors.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-bolt fa-3x"></span>
+                <h5>Performance & Web Vitals</h5>
+                <p class="oppacity-lg">
+                    Optimizing load times, asset delivery,
+                    and rendering performance to ensure
+                    lightning-fast interaction and high SEO scores.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-diagram-project fa-3x"></span>
+                <h5>State Management</h5>
+                <p class="oppacity-lg">
+                    Managing complex data flows and global
+                    application states using tools like Redux,
+                    Context API, or Signal-based solutions.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-eye fa-3x"></span>
+                <h5>UX & Accessibility</h5>
+                <p class="oppacity-lg">
+                    Focusing on intuitive user journeys and
+                    inclusive design (A11y) to make software
+                    usable for everyone.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-vial-circle-check fa-3x"></span>
+                <h5>E2E & Unit Testing</h5>
+                <p class="oppacity-lg">
+                    Ensuring UI reliability and preventing
+                    regressions by implementing robust
+                    testing suites for components and user flows.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="gamedev" class="flex-col" style="
+        text-align: center; 
+        gap: 5rem; 
+        justify-content: center;
+        align-items: center;
+        margin-inline: 10rem;
+    ">
+        <div>
+            <h4>Game Development</h4>
+            <p class="oppacity-lg">
+                As i said in my "about" abstraction i started at coding because i always
+                wanted to make my own games, that led me to research by myself to achieve
+                this goal. Along this path i learned many things like game architecture,
+                game design, 3D animation, 2D sprite drawing, digital art, narrative making,
+                among many other skills.
+            </p>
+        </div>
+
+        <div class="dedicated-skill-panel">
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-gears fa-3x"></span>
+                <h5>Engine Architecture</h5>
+                <p class="oppacity-lg">
+                    Experience building game loops,
+                    memory management systems, and
+                    custom engines from scratch to
+                    deeply understand low-level logic.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-gamepad fa-3x"></span>
+                <h5>Gameplay Programming</h5>
+                <p class="oppacity-lg">
+                    Implementing fluid player mechanics,
+                    complex AI behaviors, and physics
+                    interactions to create engaging
+                    and fun user experiences.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-cube fa-3x"></span>
+                <h5>Graphics & Animation</h5>
+                <p class="oppacity-lg">
+                    Handling 3D modeling, 2D sprite
+                    creation, and digital art pipelines,
+                    along with shader programming and
+                    lighting effects.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-chess-knight fa-3x"></span>
+                <h5>Game Design</h5>
+                <p class="oppacity-lg">
+                    Designing balanced game systems,
+                    level layouts, and narrative arcs
+                    that keep players immersed and
+                    constantly challenged.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-music fa-3x"></span>
+                <h5>Sound & Atmosphere</h5>
+                <p class="oppacity-lg">
+                    Integrating SFX, ambient music,
+                    and dynamic audio triggers to
+                    enhance the emotional impact and
+                    immersion of the game world.
+                </p>
+            </div>
+
+            <div class="skill-card-big flex-col round-xl">
+                <span id="icon" class="fa fa-rocket fa-3x"></span>
+                <h5>Optimization & Math</h5>
+                <p class="oppacity-lg">
+                    Applying advanced linear algebra
+                    and performance profiling to
+                    ensure smooth frame rates and
+                    efficient resource management.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contact" class="flex-col" style="
+        text-align: center; 
+        gap: 5rem; 
+        justify-content: center;
+        align-items: center;
+        margin-inline: 3rem;
+    ">
+        <div>
+            <h4>Contact me!</h4>
+            <p>
+                If anything on this page has caught your eye
+                you can contact me!.
+            </p>
+        </div>
+
+        <div class="contact-panel">
+
+            <div class="contact-card flex-row" onclick="window.location.href = 'mailto:zgenshinzgenshin@gmail.com'">
+                <span id="icon" class="fa fa-envelope fa-2x"></span>
+                <div class="flex-col" style="
+                        text-align: left;
+                    ">
+
+                    <h5>Email me</h5>
+                    <a href="mailto:zgenshinzgenshin@gmail.com">zgenshinzgenshin@gmail.com</a>
+                    <p class="oppacity-md">Send me an email directly</p>
                 </div>
             </div>
+
+            <div class="contact-card flex-row" onclick="window.location.href = 'https:\/\/github.com\/Cptquacks\/'">
+                <span id="icon" class="fab fa-github fa-2x"></span>
+                <div class="flex-col" style="
+                        text-align: left;
+                    ">
+
+                    <h5>Check my GitHub</h5>
+                    <a href="https://github.com/Cptquacks/">github.com/Cptquacks/</a>
+                    <p class="oppacity-md">Give an eye to my GitHub</p>
+                </div>
+            </div>
+
+            <div class="contact-card flex-row"
+                onclick="window.location.href = 'https:\/\/www.facebook.com\/koichiPain\/'">
+                <span id="icon" class="fab fa-facebook fa-2x"></span>
+                <div class="flex-col" style="
+                        text-align: left;
+                    ">
+
+                    <h5>My Facebook</h5>
+                    <a href="https://www.facebook.com/koichiPain/">profile/KoichiPain</a>
+                    <p class="oppacity-md">Nothing there except my social profile</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p>&copy; 2025 William (Cptquacks). All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://github.com/Cptquacks" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a><!--
-                    <a href="#" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fab fa-twitter"></i>
-                    </a>-->
+    <section class="flex-col" style="
+        text-align: center; 
+        gap: 5rem; 
+        justify-content: center;
+        align-items: center;
+        margin-inline: 3rem;
+    ">
+        <div>
+            <h4>Proudly Crafted on</h4>
+        </div>
+
+        <div class="ingredients-panel">
+
+            <div class="ingredient-card flex-row">
+                <span id="icon" class="devicon-vscode-plain fa-4x"></span>
+
+                <div class="flex-col">
+                    <h5>VS Code</h5>
+                    <p class="oppacity-lg">
+                        I use visual studio as my daily driver
+                        code IDE
+                    </p>
                 </div>
             </div>
+
+            <div class="ingredient-card flex-row">
+                <span id="icon" class="devicon-archlinux-plain fa-4x"></span>
+
+                <div class="flex-col">
+                    <h5>Arch Linux</h5>
+                    <p class="oppacity-lg">
+                        I use arch linux as my daily driver
+                        operative system using KDE Plasma
+                    </p>
+                </div>
+            </div>
+
+            <div class="ingredient-card flex-row">
+                <span id="icon" class="devicon-html5-plain fa-4x"></span>
+
+                <div class="flex-col">
+                    <h5>HTML</h5>
+                    <p class="oppacity-lg">
+                        Because you don't always need the most modern
+                        frontend web framework for things to look good
+                    </p>
+                </div>
+            </div>
+
+            <div class="ingredient-card flex-row">
+                <span id="icon" class="devicon-css3-plain fa-4x"></span>
+
+                <div class="flex-col">
+                    <h5>CSS</h5>
+                    <p class="oppacity-lg">
+                        Because styling not always has the need to be
+                        condensed in a additional framework
+                    </p>
+                </div>
+            </div>
+
+            <div class="ingredient-card flex-row">
+                <span id="icon" class="devicon-javascript-plain fa-4x"></span>
+
+                <div class="flex-col">
+                    <h5>JavaScript</h5>
+                    <p class="oppacity-lg">
+                        Because functionallity doesn't always have to
+                        come in a complicated way
+                    </p>
+                </div>
+            </div>
+
         </div>
+    </section>
+
+    <footer class="flex-col" style="text-align: center; gap: 1rem;">
+        <p class="oppacity-lg">Designed and Developed by William Blank &copy2025</p>
+        <p class="oppacity-md">
+            "If you don't need it, you don't have to use it"
+            <br>
+            -Any happy developer
+        </p>
+
     </footer>
-
-    <!-- JavaScript -->
-    <script src="src/js/main.js"></script>
 </body>
+
 </html>
