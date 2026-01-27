@@ -31,6 +31,13 @@ section p {
     width: -webkit-fill-available;
     display: grid;
 
+    margin: 0 0 !important;
+    padding: 1.3rem 1rem;
+
+    border-radius: var(--round-xl);
+    border: 1px solid color-mix(in srgb, var(--background) 80%, white);
+    background-color: color-mix(in srgb, var(--background) 93%, white);
+
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
 
