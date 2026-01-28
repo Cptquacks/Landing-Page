@@ -42,7 +42,9 @@
     word-break: keep-all;
     word-wrap: break-word;
 
-    box-shadow: 0 0 0 0 transparent;
+    box-shadow: 
+        0 0 5px 0px color-mix(in srgb, black 60%, transparent),
+        0 10px 15px 0px transparent;
 }
 
 .skill-card-big #icon {
@@ -63,7 +65,9 @@
 .skill-card-big:hover {
     transform: translateY(-10px);
     border: 1px solid var(--text);
-    box-shadow: 0 10px 10px .5px black;
+    box-shadow: 
+        0 13px 8px 0px color-mix(in srgb, black 40%, transparent),
+        0 5px 5px 0px color-mix(in srgb, black 20%, transparent);   
 }
 
 .skill-card-big:hover #icon {
