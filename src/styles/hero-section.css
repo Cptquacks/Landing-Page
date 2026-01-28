@@ -10,7 +10,7 @@ section p {
     object-fit: cover;
     object-position: top;
 
-    width: 30% !important;
+    width: 24dvw !important;
     height: 48dvh !important;
 
     overflow: hidden;
