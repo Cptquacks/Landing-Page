@@ -6,6 +6,7 @@ section p {
     line-height: 1.8rem;
 }
 
+/* Hero section styling */
 .hero-heading img {
     object-fit: cover;
     object-position: top;
@@ -17,31 +18,43 @@ section p {
     border-radius: 100%;
 }
 
-.skills-panel {
-    width: -webkit-fill-available;
-    display: grid;
-
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto auto;
-
-    gap: 1rem;
+.hero-section {
+    justify-content: space-between;
+    margin: 5rem 8rem;
+    gap: 3rem;
 }
 
-.dedicated-skill-panel {
-    width: -webkit-fill-available;
+/* Main stack display component styling*/
+.stack-display {
     display: grid;
-
-    margin: 0 0 !important;
-    padding: 1.3rem 1rem;
-
-    border-radius: var(--round-xl);
-    border: 1px solid color-mix(in srgb, var(--background) 80%, white);
-    background-color: color-mix(in srgb, var(--background) 93%, white);
-
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto;
+    gap: .5rem;
+}
 
-    gap: 1rem .5rem;
+/* Main timeline component styling */
+
+
+.timeline-display {
+    position: relative;
+    display: grid;
+    
+    padding-left: 2rem;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-row: auto auto;
+}
+
+.timeline-display::before {
+    content: '';
+    position: absolute;
+    top: 0; bottom: 0;
+    left: .5rem;
+
+    width: .5rem;
+
+    border-radius: 20mm;
+    background-color: var(--background-soft);
 }
 
 .contact-panel {
@@ -122,18 +135,28 @@ footer {
         padding: 5rem 0 !important;
     }
 
-    .skills-panel {
-        grid-template-columns: repeat(3, 1fr);
+    .stack-display {
+        grid-template-columns: repeat(4, 1fr);
+        width: -webkit-fill-available;
     }
 
-    .dedicated-skill-panel {
-        grid-template-columns: repeat(2, 1fr);
+    div.alt .stack-display {
+        grid-template-columns: repeat(3, 1fr);
+        width: -webkit-fill-available;
+    }
 
-        margin-inline: 0 !important;
-        margin: 0 !important;
+    div.alt {
+        justify-content: space-between;
+        padding: 0 !important;
+        gap: 0rem !important;
+    }
 
-        align-items: stretch;
-        gap: .8rem .15rem;
+    .timeline-display {
+        padding-left: 1.2rem;
+    }
+
+    .timeline-display::before {
+        left: 1px;
     }
 
     .contact-panel {

@@ -12,6 +12,9 @@
 :root {    
     --text: #eaefd2;
     --background: #020109;
+    --background-soft: color-mix(in srgb, #020109 95%, white);
+    --background-muted: color-mix(in srgb, #020109 90%, gray);
+    --border: color-mix(in srgb, #020109 85%, gray);
 
     --primary: #613dc2;
     --secondary: #15139a;
@@ -33,6 +36,7 @@
 
 .flex-row { display: flex; flex-direction: row; }
 .flex-col { display: flex; flex-direction: column; }
+.align-between { align-items: center; justify-content: space-between; }
 
 .gradient-text {
     background: 
