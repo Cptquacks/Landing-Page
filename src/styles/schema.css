@@ -9,11 +9,11 @@
     scroll-behavior: smooth;
 }
 
-:root {    
+:root {
     --text: #eaefd2;
     --background: #020109;
-    --background-soft: color-mix(in srgb, #020109 95%, white);
-    --background-muted: color-mix(in srgb, #020109 90%, gray);
+    --background-soft: color-mix(in srgb, #020109 85%, white);
+    --background-muted: color-mix(in srgb, #020109 80%, gray);
     --border: color-mix(in srgb, #020109 85%, gray);
 
     --primary: #613dc2;
@@ -25,53 +25,106 @@
     --round-xl: 5mm;
 }
 
-.oppacity-lg { opacity: .8; }
-.oppacity-md { opacity: .5; }
+.oppacity-lg {
+    opacity: .8;
+}
 
-.round-lg { border-radius: var(--round-lg); }
-.round { border-radius: var(--round); }
-.round-xl { border-radius: var(--round-xl); }
+.oppacity-md {
+    opacity: .5;
+}
 
-.no-border { border: none }
+.round-lg {
+    border-radius: var(--round-lg);
+}
 
-.flex-row { display: flex; flex-direction: row; }
-.flex-col { display: flex; flex-direction: column; }
-.align-between { align-items: center; justify-content: space-between; }
+.round {
+    border-radius: var(--round);
+}
+
+.round-xl {
+    border-radius: var(--round-xl);
+}
+
+.no-border {
+    border: none
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.align-between {
+    align-items: center;
+    justify-content: space-between;
+}
 
 .gradient-text {
-    background: 
-        linear-gradient(
-            50deg,
+    background:
+        linear-gradient(50deg,
             var(--accent) 20%,
             var(--primary) 50%,
-            var(--secondary) 80%
-        );
+            var(--secondary) 80%);
 
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Montserrat';
     font-weight: 700;
 }
 
-html {font-size: 18px;} /* 16px */
+html {
+    font-size: 18px;
+}
 
-h1 {font-size: 4.210rem; /* 67.36px */}
+/* 16px */
 
-h2 {font-size: 3.158rem; /* 50.56px */}
+h1 {
+    font-size: 4.210rem;
+    /* 67.36px */
+}
 
-h3 {font-size: 2.369rem; /* 37.92px */}
+h2 {
+    font-size: 3.158rem;
+    /* 50.56px */
+}
 
-h4 {font-size: 1.777rem; /* 28.48px */}
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
 
-h5 {font-size: 1.333rem; /* 21.28px */}
+h4 {
+    font-size: 1.777rem;
+    /* 28.48px */
+}
 
-h6 { font-size: 1.2rem; }
+h5 {
+    font-size: 1.333rem;
+    /* 21.28px */
+}
 
-small {font-size: 0.750rem; /* 12px */}
+h6 {
+    font-size: 1.2rem;
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
 
 
 
@@ -91,7 +144,8 @@ nav {
     align-items: center;
 
     width: 100%;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     padding: .8rem 2rem;
     z-index: 100;
 }
@@ -102,7 +156,8 @@ nav ul {
 }
 
 
-button, a.button {
+button,
+a.button {
     transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
     display: inline-block;
     text-decoration: none;
@@ -119,11 +174,13 @@ button, a.button {
     border-radius: var(--round);
 }
 
-button.alt, a.button.alt {
+button.alt,
+a.button.alt {
     background-color: transparent;
 }
 
-button:hover, a.button:hover {
+button:hover,
+a.button:hover {
     color: var(--background);
     border: 2px solid var(--text);
     background-color: var(--text) !important;
@@ -131,28 +188,52 @@ button:hover, a.button:hover {
 }
 
 
-@media (width <= 900px) {
-    html, body {
+@media (width <=900px) {
+
+    html,
+    body {
         overflow-x: hidden !important;
     }
 }
 
-@media (width <= 450px) {
-    html {font-size: 16px;} /* 16px */
+@media (width <=450px) {
+    html {
+        font-size: 16px;
+    }
 
-    h1 {font-size: 3.500rem; /* 67.36px */}
+    /* 16px */
 
-    h2 {font-size: 3rem; /* 50.56px */}
+    h1 {
+        font-size: 3.500rem;
+        /* 67.36px */
+    }
 
-    h3 {font-size: 2.3rem; /* 37.92px */}
+    h2 {
+        font-size: 3rem;
+        /* 50.56px */
+    }
 
-    h4 {font-size: 1.5rem; /* 28.48px */}
+    h3 {
+        font-size: 2.3rem;
+        /* 37.92px */
+    }
 
-    h5 {font-size: 1rem; /* 21.28px */}
+    h4 {
+        font-size: 1.5rem;
+        /* 28.48px */
+    }
 
-    h6 { font-size: .8rem; }
+    h5 {
+        font-size: 1rem;
+        /* 21.28px */
+    }
 
-    html, body {
+    h6 {
+        font-size: .8rem;
+    }
+
+    html,
+    body {
         overflow-x: hidden !important;
     }
 }

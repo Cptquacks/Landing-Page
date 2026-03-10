@@ -38,7 +38,7 @@ section p {
 .timeline-display {
     position: relative;
     display: grid;
-    
+
     padding-left: 2rem;
 
     grid-template-columns: repeat(1, 1fr);
@@ -48,7 +48,8 @@ section p {
 .timeline-display::before {
     content: '';
     position: absolute;
-    top: 0; bottom: 0;
+    top: 0;
+    bottom: 0;
     left: .5rem;
 
     width: .5rem;
@@ -82,24 +83,20 @@ footer {
     padding: 2rem 0 4rem;
 }
 
-@media (width <= 900px) {
+@media (width <=900px) {
     section {
         margin: 1rem !important;
     }
 
     .hero-heading {
         width: -webkit-fill-available;
-        background: 
-            linear-gradient(
-                to bottom,
+        background:
+            linear-gradient(to bottom,
                 var(--background) 20%,
-                transparent 80%
-            ),
-            linear-gradient(
-                to top,
+                transparent 70%),
+            linear-gradient(to top,
                 var(--background) 30%,
-                transparent 90%
-            ),
+                transparent 90%),
             url('../../img/profile_pic.png') 40% 23% no-repeat;
         flex-direction: column !important;
         text-align: center;
@@ -130,7 +127,7 @@ footer {
 
 }
 
-@media (width <= 450px) {
+@media (width <=450px) {
     section {
         padding: 5rem 0 !important;
     }
