@@ -187,13 +187,18 @@ a.button:hover {
     transform: translateY(-3px);
 }
 
-
 @media (width <=900px) {
 
     html,
     body {
         overflow-x: hidden !important;
     }
+
+    button:hover,
+    a.button:hover {
+        transform: translate(0);
+    }
+
 }
 
 @media (width <=450px) {
