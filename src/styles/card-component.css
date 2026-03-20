@@ -10,7 +10,13 @@
 #stack-item.core {
     background-color: var(--primary);
     padding: .8rem;
-    border: 1px solid var(--primary);
+    background: var(--background-gradient);
+
+    border: 2px solid var(--border);
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, rgba(255, 255, 255, .5));
+    border-bottom: 3px solid var(--border);
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 #stack-item:hover {
