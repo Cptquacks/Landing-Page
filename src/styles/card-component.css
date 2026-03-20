@@ -21,7 +21,7 @@
 #stack-item:hover {
     transform: translateY(-8px);
     background-color: var(--text);
-    border: 1px solid var(--text);
+    border-color: var(--text);
     color: var(--background-muted);
 }
 
