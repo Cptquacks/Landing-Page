@@ -27,7 +27,7 @@
     padding: 1rem 3rem;
     border-radius: var(--round-xl);
     border: 2px solid var(--border);
-    border-top: 1px solid color-mix(in srgb, var(--border) 10%, rgba(255, 255, 255, .5));
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, rgba(255, 255, 255, .5));
     border-bottom: 3px solid var(--border);
 
     background: var(--background-gradient);
@@ -64,7 +64,7 @@
     background-color: var(--primary);
 
     border: 2px solid var(--border);
-    border-top: 1px solid color-mix(in srgb, var(--border) 10%, rgba(255, 255, 255, .5));
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, rgba(255, 255, 255, .5));
     border-bottom: 3px solid var(--border);
 
     box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
