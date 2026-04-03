@@ -11,9 +11,15 @@
 
 :root {
     --text: #eaefd2;
+
     --background: #020109;
     --background-soft: color-mix(in srgb, #020109 85%, white);
     --background-muted: color-mix(in srgb, #020109 80%, gray);
+
+    --background-gradient: linear-gradient(58deg,
+            var(--primary) 80%,
+            color-mix(in srgb, var(--accent) 10%, var(--primary))) 10%;
+
     --border: color-mix(in srgb, #020109 85%, gray);
 
     --primary: #613dc2;
@@ -23,6 +29,9 @@
     --round-lg: .8mm;
     --round: 2mm;
     --round-xl: 5mm;
+
+    --shadow-xs: 0 3px 5px rgba(0, 0, 0, .3);
+    --border: rgba(255, 255, 255, .15);
 }
 
 .oppacity-lg {
@@ -172,6 +181,8 @@ a.button {
 
     border: 2px solid var(--primary);
     border-radius: var(--round);
+
+    box-shadow: 0px 3px .5px rgba(0, 0, 0, .8);
 }
 
 button.alt,
@@ -182,9 +193,12 @@ a.button.alt {
 button:hover,
 a.button:hover {
     color: var(--background);
-    border: 2px solid var(--text);
+
     background-color: var(--text) !important;
+    border: 2px solid var(--text);
+
     transform: translateY(-3px);
+    box-shadow: 0px 6px .5px rgba(0, 0, 0, .8);
 }
 
 @media (width <=900px) {
@@ -196,7 +210,7 @@ a.button:hover {
 
     button:hover,
     a.button:hover {
-        transform: translate(0);
+        transform: translate(0px);
     }
 
 }
@@ -219,7 +233,7 @@ a.button:hover {
     }
 
     h3 {
-        font-size: 2.3rem;
+        font-size: 2rem;
         /* 37.92px */
     }
 

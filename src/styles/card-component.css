@@ -10,13 +10,18 @@
 #stack-item.core {
     background-color: var(--primary);
     padding: .8rem;
-    border: 1px solid var(--primary);
+
+    border: 2px solid var(--border);
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, rgba(255, 255, 255, .5));
+    border-bottom: 3px solid var(--border);
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 #stack-item:hover {
     transform: translateY(-8px);
     background-color: var(--text);
-    border: 1px solid var(--text);
+    border-color: var(--text);
     color: var(--background-muted);
 }
 
@@ -26,21 +31,31 @@
 
     padding: 1rem 3rem;
     border-radius: var(--round-xl);
+    border: 2px solid var(--border);
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, rgba(255, 255, 255, .5));
+    border-bottom: 3px solid var(--border);
 
-    background: var(--primary);
-
+    background: var(--background-gradient);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 }
 
 #timeline-item::before {
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
     content: '';
     position: absolute;
-    left: -3.25%;
+    left: -3.35%;
     top: 40%;
     width: 1rem;
     height: 1rem;
     background-color: var(--primary);
     border: 2px solid var(--accent);
     border-radius: 100%;
+    box-shadow: var(--shadow-xs);
+}
+
+#timeline-item:hover::before {
+    transform: scale(1.15);
+    box-shadow: 0 0 3px var(--primary);
 }
 
 .item-date {
@@ -52,6 +67,12 @@
     width: -webkit-fill-available;
     align-items: center;
     background-color: var(--primary);
+
+    border: 2px solid var(--border);
+    border-top: 1px solid color-mix(in srgb, var(--border) 60%, rgba(255, 255, 255, .5));
+    border-bottom: 3px solid var(--border);
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
 
     padding: 1rem 2rem;
     gap: 2rem;
@@ -129,6 +150,12 @@
 }
 
 @media (width <=450px) {
+
+    #stack-item:hover,
+    .contact-card:hover {
+        transform: none;
+    }
+
     #timeline-item::before {
         left: -6.8%;
     }
